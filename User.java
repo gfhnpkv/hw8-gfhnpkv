@@ -69,6 +69,7 @@
             if (follows[i].equals(name)) {
                follows[i] = follows[fCount - 1];
                follows[fCount - 1] = null;
+                fCount = fCount - 1;
                return true;
             }
         }
